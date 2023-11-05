@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+
+.css-lapokc {
+  min-width: 4ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px !important;
+}
+
+.css-mcc4gz-MuiTableCell-root,.css-1lqlvt1-MuiTableCell-root,.css-j4jbox-MuiTableCell-root,.css-1q2a2un-MuiTableCell-root,.css-12qlds5-MuiTableCell-root,.css-d9j383-MuiTableCell-root,.css-1wbhjk7-MuiTableCell-root  {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  display: table-cell;
+  vertical-align: inherit;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  text-align: left;
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: inherit;
+  overflow: hidden;
+  padding: 1rem;
+  text-overflow: ellipsis;
+  white-space: normal;
+  z-index: 0;
+  background-color: inherit;
+  background-image: inherit;
+  opacity: 1;
+  -webkit-transition: padding 150ms ease-in-out;
+  transition: padding 150ms ease-in-out;
+  min-width: max(calc(var(--col-name-size) * 1px), 40px);
+  width: calc(var(--col-name-size) * 1px);
+  font-size: 13px !important;
+}
+body {
+
+}
