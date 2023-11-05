@@ -29,7 +29,7 @@ const Doctors = () => {
             <span>expert doctor</span>
             <div class="share div-center-80" style={{ display: "flex" }}>
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -40,7 +40,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -51,7 +51,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -62,7 +62,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -80,7 +80,7 @@ const Doctors = () => {
             <span>expert doctor</span>
             <div class="share div-center-80" style={{ display: "flex" }}>
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -91,7 +91,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -102,7 +102,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -113,7 +113,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -131,7 +131,7 @@ const Doctors = () => {
             <span>expert doctor</span>
             <div class="share div-center-80" style={{ display: "flex" }}>
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -142,7 +142,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -153,7 +153,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -164,7 +164,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -182,7 +182,7 @@ const Doctors = () => {
             <span>expert doctor</span>
             <div class="share div-center-80" style={{ display: "flex" }}>
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -193,7 +193,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -204,7 +204,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -215,7 +215,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -233,7 +233,7 @@ const Doctors = () => {
             <span>expert doctor</span>
             <div class="share div-center-80" style={{ display: "flex" }}>
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -244,7 +244,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -255,7 +255,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -266,7 +266,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -284,7 +284,7 @@ const Doctors = () => {
             <span>expert doctor</span>
             <div class="share div-center-80" style={{ display: "flex" }}>
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -295,7 +295,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -306,7 +306,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -317,7 +317,7 @@ const Doctors = () => {
               </a>
 
               <a
-                class="fab fa-facebook-f"
+                class="fab fa-facebook-f cursor-pointer"
                 style={{
                   display: "flex",
                   justifyContent: "center",

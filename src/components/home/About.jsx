@@ -31,8 +31,7 @@ const About = () => {
               vero ipsam laborum porro voluptates voluptatibus a nihil
               temporibus deserunt vel?
             </p>
-            <a href="#" class="btn">
-              {" "}
+            <a  class="btn">
               learn more
             </a>
           </div>

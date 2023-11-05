@@ -26,7 +26,7 @@ const Section4 = () => {
     },
   ];
   return (
-    <div className="bg-gradient-to-r from-cyan-500 to-blue-500">
+    <div className="bg-gradient-to-r from-[#FBCEB1] to-[#E52B50]">
       <Wrap>
         <div className="wrap">
         <h1 class="heading">
@@ -74,7 +74,7 @@ const Section4 = () => {
               );
             })}
 
-            <div className="bg-blue-200 border border-gray-300 w-[200px] h-[40px] flex flex-row items-center justify-center cursor-pointer hover:bg-blue-600 hover:text-white transition-all duration-75 rounded-lg">
+            <div className="bg-[#D2122E] border text-white border-gray-300 w-[200px] h-[40px] flex flex-row items-center justify-center cursor-pointer hover:bg-[#FBCEB1] hover:text-white transition-all duration-75 rounded-lg">
                 <p>Read More</p>
             </div>
           </div>

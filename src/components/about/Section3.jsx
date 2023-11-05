@@ -1,8 +1,8 @@
 import React from "react";
 import Wrap from "./Wrap";
 // import device1 from "../../../public/assets/device1.jpg";
-import device1 from "../../../public/assets/blood3.jpg"
-import device2 from "../../../public/assets/blood3.jpg"
+import device1 from "../../../public/assets/blood.avif"
+import device2 from "../../../public/assets/blood.avif"
 // import device2 from "../../../public/assets/device2.jpg";
 import device3 from "../../../public/assets/device3.jpg";
 import device4 from "../../../public/assets/device4.jpg";
@@ -51,7 +51,7 @@ const Section3 = () => {
                   <h1 className="text-gray-700">{item?.date}</h1>
                 </div>
                 <h1 className="text-[18px] font-bold">{item?.heading}</h1>
-                <div className="flex flex-row items-center gap-[10px] bg-blue-500 h-[40px] w-[120px] text-white text-center justify-center rounded-full cursor-pointer text-[12px]">
+                <div className="flex flex-row items-center gap-[10px] bg-[#9e1b32] h-[40px] w-[120px] text-white text-center justify-center rounded-full cursor-pointer text-[12px]">
                   <p>Read more</p>
                   <AiOutlineSwapRight />
                 </div>

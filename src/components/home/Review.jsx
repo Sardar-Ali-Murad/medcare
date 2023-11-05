@@ -12,7 +12,7 @@ const Review = () => {
       <section class="review" id="review">
         <h1 class="heading">
           {" "}
-          client's <span>review</span>{" "}
+          Save Someone's <span>Life</span>{" "}
         </h1>
 
         <div class="box-container">

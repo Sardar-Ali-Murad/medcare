@@ -13,19 +13,19 @@ const Icons = () => {
         <div class="icons">
           <GiDoctorFace className="icon" />
           <h3>140+</h3>
-          <p>doctors at work</p>
+          <p>Contributors</p>
         </div>
 
         <div class="icons">
           <BsPeople className="icon" />
           <h3>1040+</h3>
-          <p>satisfied patients</p>
+          <p>Donors Available</p>
         </div>
 
         <div class="icons">
           <IoBedSharp className="icon" />
           <h3>500+</h3>
-          <p>bed facility</p>
+          <p>Facility</p>
         </div>
 
         <div class="icons">

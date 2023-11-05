@@ -18,14 +18,14 @@ const Section1 = () => {
             para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
         },
         {
-            mainImage:s2,
+            mainImage:s1,
             userName:"Jonathan Hope",
             role:"Designer",
             heading:"Should UI designers learn how to code?",
             para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
         },
         {
-            mainImage:s3,
+            mainImage:s1,
             userName:"Michael Smith",
             role:"Designer",
             heading:"Step by step to conduct usability typesetting",
@@ -42,23 +42,23 @@ const Section1 = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px] mt-[50px]'>
          {
             array.map((item,i)=>{
-                return <div key={i} className='border border-gray-100 shadow-gray-50 shadow-md'>
-                    <div className='relative '>
-                    <Image src={item?.mainImage}/>
+                return <div key={i} className='border border-gray-100 shadow-gray-50 shadow-lg'>
+                    <div className='relative rounded-lg'>
+                    <Image src={item?.mainImage} className='w-[100%] h-[60%] rounded-lg'/>
                     <div className='absolute bottom-0 left-0 px-[10px] py-[5px] bg-[white] flex gap-[10px] items-center'>
                         <Image src={user} className='h-[40px] w-[40px] rounded-full'/>
-                        <div className='flex flex-col gap-[7px]'>
-                            <h1 className='text-[18px]'>{item?.userName}</h1>
-                            <p className='text-gray-700'>{item?.role}</p>
+                        <div className='flex flex-col gap-[4px]'>
+                            <h1 className='text-[14px] text-gray-900'>{item?.userName}</h1>
+                            <p className='text-gray-700 text-[12px]'>{item?.role}</p>
                         </div>
 
                     </div>
                     </div>
                     <div className='flex flex-col gap-[10px] my-[20px] mx-[20px]'>
-                        <h1 className='text-[20px] font-bold'>{item?.heading}</h1>
+                        <h1 className='text-[20px]  text-gray-900'>{item?.heading}</h1>
                         <p className='text-gray-500'>{item?.para}</p>
                     <div className='flex flex-row items-center gap-[10px]'>
-                        <p className='text-blue-600 cursor-pointer'>Read More</p>
+                        <p className='text-blue-600 cursor-pointer text-[14px]'>Read More</p>
                         <BsArrowRight className='text-blue-600 cursor-pointer'/>
                     </div>
                     </div>

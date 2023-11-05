@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import "../../components/home/index.css";
 import { provinces, cities, bloodGroups } from "./data";
@@ -6,12 +7,12 @@ const Donar = () => {
     <div>
       <section class="book" id="book">
         <h1 class="heading">
-          <span>Becone A</span> Donar
+          <span>BECOME A</span> DONAR
         </h1>
 
         <div class="row">
-          <form action="">
-            <h3>Save A Life</h3>
+          <form  onSubmit={(e)=>e.preventDefault()}>
+            <h3 className="text-[25px] text-gray-900">Save A Life</h3>
             <select
               id="countries"
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 box dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"

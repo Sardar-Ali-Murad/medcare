@@ -8,8 +8,7 @@ const Booking = () => {
   return (
     <section class="book" id="book">
       <h1 class="heading">
-        {" "}
-        <span>book</span> now{" "}
+        <span>Have Some</span> Query?
       </h1>
 
       <div class="row">
@@ -17,13 +16,13 @@ const Booking = () => {
           <Image src={Img1} alt="" height={100} width={100} />
         </div>
 
-        <form action="">
-          <h3>book appointment</h3>
+        <form action="" onSubmit={(e)=>e.preventDefault()}>
+          <h3>Details</h3>
           <input type="text" placeholder="your name" class="box" />
           <input type="number" placeholder="your number" class="box" />
           <input type="email" placeholder="your email" class="box" />
           <input type="date" class="box" />
-          <input type="submit" value="book now" class="btn" />
+          <input type="submit" value="Save" class="btn" />
         </form>
       </div>
     </section>

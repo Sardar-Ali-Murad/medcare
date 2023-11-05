@@ -89,7 +89,7 @@ section:nth-child(even) {
 
 .icon {
   font-size: 50px;
-  /* color: green; */
+  color: green;
   color: #9e1b32;
 }
 
@@ -174,7 +174,8 @@ section:nth-child(even) {
   transform: translateX(350px);
   transition: 1s ease-in-out;
   display: none;
-  background-color: rgb(126, 161, 126);
+  /* background-color: rgb(126, 161, 126); */
+  background-color: #9e1b32;
 }
 
 .small-screen-nav-active {
@@ -426,12 +427,12 @@ section:nth-child(even) {
 
 .doctors .box-container .box h3 {
   color: var(--black);
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
 }
 
 .doctors .box-container .box span {
   color: var(--green);
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 .doctors .box-container .box .share {
@@ -483,7 +484,7 @@ section:nth-child(even) {
 .book .row form h3 {
   color: var(--black);
   padding-bottom: 1rem;
-  font-size: 3rem;
+  /* font-size: 3rem; */
 }
 
 .book .row form .box {

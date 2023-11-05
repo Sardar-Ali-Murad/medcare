@@ -5,7 +5,7 @@ import Footer from './Footer'
 
 const Overlay = ({children}) => {
   return (
-    <div className="text-[#fff]">
+    <div>
       <Headers/>
       {children}
       <Footer/>
