@@ -10,10 +10,13 @@ const Navbar = () => {
   return (
     <div className="nav">
       <div className="nav-main">
-        <a class="logo" style={{ color: "white", fontSize: "20px" }}>
-          {" "}
-          <i class="fas fa-heartbeat"></i> medcare.{" "}
-        </a>
+        <Link
+          href="/"
+          class="logo"
+          style={{ color: "white", fontSize: "20px" }}
+        >
+          <i class="fas fa-heartbeat"></i> medcare.
+        </Link>
 
         <nav className="big-screen-nav">
           <ul>
@@ -85,7 +88,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link className="fancy-link" href="/about">
+              <Link
+                className="fancy-link"
+                href="/about"
+                onClick={() => setHam(true)}
+              >
                 ABOUT US
               </Link>
             </li>

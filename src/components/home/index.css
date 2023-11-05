@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
 :root {
-  --green: #16a085;
+  /* --green: #16a085; */
+  --green: #9e1b32;
   --black: #444;
   --light-color: #777;
   --box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
@@ -88,7 +89,8 @@ section:nth-child(even) {
 
 .icon {
   font-size: 50px;
-  color: green;
+  /* color: green; */
+  color: #9e1b32;
 }
 
 /* The Navbar CSS */
@@ -109,7 +111,8 @@ section:nth-child(even) {
 }
 .nav {
   position: sticky;
-  background-color: rgb(126, 161, 126);
+  background-color: #9e1b32;
+  /* background-color: rgb(126, 161, 126); */
   top: 0px;
   left: 0px;
   z-index: 100;
