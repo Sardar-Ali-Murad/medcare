@@ -1,14 +1,32 @@
 "use client";
+import React from "react";
 import { useMemo } from "react";
 import {
   MaterialReactTable,
   useMaterialReactTable,
 } from "material-react-table";
 import "../home/index.css"
-import data  from "./data"
-
+import axios from "axios";
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const Table = () => {
+  let [loading,setLoading]=React.useState(false)
+  let [data,setData]=React.useState([])
+  React.useEffect(()=>{
+    const getDonars=async ()=>{
+      setLoading(true)
+      try {
+        let {data}=await axios.get("https://medicare-nodejs.vercel.app/api/v1/donar")
+        setData(data?.donars.filter((all)=>all?.isVerified===true))
+        setLoading(false)
+      } catch (error) {
+        setLoading(false)
+      }
+    }
+    getDonars()
+  },[])
+
   //should be memoized or stable
   const columns = useMemo(
     () => [
@@ -33,7 +51,7 @@ const Table = () => {
         size: 150,
       },
       {
-        accessorKey: "province",
+        accessorKey: "state",
         header: "State",
         size: 150,
       },
@@ -57,12 +75,15 @@ const Table = () => {
   });
 
   return (
-    <div className="py-[2rem] px-[9%] min-h-full">
-      <div className="row">
+    <div className="py-[2rem] px-[9%] min-h-[80vh]">
+      <div className="row ">
       <h1 class="heading">
           <span>FOUND YOUR POSSIBLE</span> DONAR
         </h1>
-      <MaterialReactTable table={table} />;
+        {loading?
+          <Skeleton />:
+          <MaterialReactTable table={table} />
+        }
       </div>
     </div>
   );

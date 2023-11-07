@@ -10,7 +10,7 @@
 }
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -494,7 +494,22 @@ section:nth-child(even) {
   color: var(--black);
   text-transform: none;
   padding: 1rem;
+  outline: none !important;
 }
+
+.book .row form textarea {
+  width: 100%;
+  margin: 0.7rem 0;
+  border-radius: 0.5rem;
+  border: var(--border);
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  padding: 1rem;
+  outline: none !important;
+}
+
+
 
 .book .row form .btn {
   padding: 1rem 4rem;

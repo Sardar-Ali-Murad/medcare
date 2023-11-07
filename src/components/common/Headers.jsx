@@ -22,22 +22,27 @@ const Navbar = () => {
           <ul>
             <li>
               <Link className="fancy-link" href="/">
-                HOME
+                Home
               </Link>
             </li>
             <li>
               <Link className="fancy-link" href="/donar">
-                BECOME A DONAR
+                Become a donar
               </Link>
             </li>
             <li>
               <Link className="fancy-link" href="/patient">
-                FIND A DONAR
+                Find a donar
               </Link>
             </li>
             <li>
               <Link className="fancy-link" href="/about">
-                ABOUT US
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link className="fancy-link" href="/admin">
+                Admin
               </Link>
             </li>
           </ul>
@@ -66,7 +71,7 @@ const Navbar = () => {
                 href="/"
                 onClick={() => setHam(true)}
               >
-                HOME
+                Home
               </Link>
             </li>
             <li>
@@ -75,7 +80,7 @@ const Navbar = () => {
                 href="/donar"
                 onClick={() => setHam(true)}
               >
-                BECOME A DONAR
+                Become a donar
               </Link>
             </li>
             <li>
@@ -84,7 +89,7 @@ const Navbar = () => {
                 href="/patient"
                 onClick={() => setHam(true)}
               >
-                FIND A DONAR
+                Find a donar
               </Link>
             </li>
             <li>
@@ -93,7 +98,16 @@ const Navbar = () => {
                 href="/about"
                 onClick={() => setHam(true)}
               >
-                ABOUT US
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="fancy-link"
+                href="/sdmin"
+                onClick={() => setHam(true)}
+              >
+                Admin
               </Link>
             </li>
           </ul>

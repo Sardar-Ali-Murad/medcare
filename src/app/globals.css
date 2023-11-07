@@ -8,9 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-
-
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -18,8 +15,6 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
-
 
 .css-lapokc {
   min-width: 4ch;
@@ -29,8 +24,14 @@
   font-size: 14px !important;
 }
 
-.css-mcc4gz-MuiTableCell-root,.css-1lqlvt1-MuiTableCell-root,.css-j4jbox-MuiTableCell-root,.css-1q2a2un-MuiTableCell-root,.css-12qlds5-MuiTableCell-root,.css-d9j383-MuiTableCell-root,.css-1wbhjk7-MuiTableCell-root  {
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
+.css-mcc4gz-MuiTableCell-root,
+.css-1lqlvt1-MuiTableCell-root,
+.css-j4jbox-MuiTableCell-root,
+.css-1q2a2un-MuiTableCell-root,
+.css-12qlds5-MuiTableCell-root,
+.css-d9j383-MuiTableCell-root,
+.css-1wbhjk7-MuiTableCell-root {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.43;
@@ -57,9 +58,8 @@
   font-size: 13px !important;
 }
 
-
 .css-1357ta5-MuiTableCell-root {
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -77,4 +77,52 @@
   font-size: 14px !important;
   font-size: 18px;
   font-weight: 500 !important;
+}
+
+.toast-message {
+  background: #9e1b32;
+  color: #fff;
+  font-size: 30px !important;
+  width: 34vw;
+  padding: 30px 20px;
+}
+
+.pagination .active > .page-link {
+  font-size: 24px !important;
+  width: 40px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 50px !important;
+  /* background-color: #9e1b32 !important;
+  border: 1px solid #9e1b32 !important;
+  color: #fff; */
+}
+
+.pagination .active > .page-link a {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.pagination {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.pagination .page-link {
+  font-size: 24px !important;
+  width: 40px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 50px !important;
+  /* background-color: #9e1b32 !important;
+  border: 1px solid #9e1b32 !important;
+  color: #fff; */
+}
+
+.pagination .page-link a {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
