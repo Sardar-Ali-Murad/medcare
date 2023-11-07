@@ -15,12 +15,10 @@ const Home = () => {
         <div class="content">
           <h3>stay safe, stay healthy</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sed
-            autem vero? Magnam, est laboriosam!
+          In times of need, our community comes together. Find the lifeline you're looking for - a hero in someone's blood. Your well-being is our priority.
           </p>
           <a  class="btn">
-            {" "}
-            contact us{" "}
+            contact us
           </a>
         </div>
       </section>

@@ -17,7 +17,7 @@ const Booking = () => {
         </div>
 
         <form action="" onSubmit={(e)=>e.preventDefault()}>
-          <h3>Details</h3>
+          <h3 className="text-[24px] text-gray-900">Details</h3>
           <input type="text" placeholder="your name" class="box" />
           <input type="number" placeholder="your number" class="box" />
           <input type="email" placeholder="your email" class="box" />

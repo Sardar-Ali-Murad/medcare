@@ -10,7 +10,7 @@ import Blogs from "@/components/home/Blogs";
 
 const HomePage = () => {
   return (
-    <div >
+    <div>
       <Home />
       <Icons />
       <Services />

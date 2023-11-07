@@ -12,24 +12,24 @@ const Section1 = () => {
     let array=[
         {
             mainImage:s1,
-            userName:"Andrea William",
-            role:"Designer",
-            heading:"How to give a better feedback",
-            para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+            userName:"Dr. Sarah Johnson",
+            role:"MBBS, MD in Internal Medicine, Board-Certified Physician",
+            heading:"Dedicated to Excellence",
+            para:"Our team members are driven by a passion for providing top-notch healthcare services."
         },
         {
             mainImage:s1,
-            userName:"Jonathan Hope",
-            role:"Designer",
-            heading:"Should UI designers learn how to code?",
-            para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+            userName:"Dr. John Mitchell",
+            role:"DDS, DMD in Dentistry, Specialist in Oral Surgery",
+            heading:"A Wealth of Experience?",
+            para:"With years of experience, our experts are well-equipped to address your healthcare needs."
         },
         {
             mainImage:s1,
-            userName:"Michael Smith",
-            role:"Designer",
-            heading:"Step by step to conduct usability typesetting",
-            para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+            userName:"Dr. Emily Roberts",
+            role:" PhD in Psychology, Licensed Clinical Psychologist",
+            heading:"A Personal Touch",
+            para:"We believe in treating you not just as a patient but as a valued member of our extended healthcare family"
         },
     ]
   return (
@@ -38,7 +38,7 @@ const Section1 = () => {
          <h1 class="heading">
           <span>Our</span> Foundation
         </h1>
-      <p className='text-gray-500 text-center text-[20px] my-[20px]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <p className='text-gray-500 text-center text-[20px] my-[20px]'>Built on the principles of compassion, community, and care, our foundation is the cornerstone of our commitment to your well-being.</p>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px] mt-[50px]'>
          {
             array.map((item,i)=>{

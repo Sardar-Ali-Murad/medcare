@@ -9,21 +9,21 @@ import "../home/index.css"
 const Section6 = () => {
     let array=[
         {
-            date:" 15 Aug 2022 ",
-            heading:"Sales buildings",
-            para:"Lorenm ipsum dolor sit amet consectetur. Vitae Read more",
+            date:" 15 Aug 2023",
+            heading:"Join Our Cause",
+            para:"Become a part of our community and help make a positive impact on the lives of others",
             image:img2
         },
         {
-            date:"  22 Aug 2022  ",
-            heading:"Buy buildings",
-            para:"Lorenm ipsum dolor sit amet consectetur. Vitae Read more",
+            date:"  22 March 2023",
+            heading:"Get Involved",
+            para:"Your support matters. Find out how you can contribute to our mission",
             image:img2
         },
         {
-            date:"  15 Aug 2022  ",
-            heading:"Read buildings",
-            para:"Lorenm ipsum dolor sit amet consectetur. Vitae Read more",
+            date:"15 May 2023",
+            heading:"Contact Us",
+            para:"Have questions or want to connect with us? We're here to assist you.",
             image:img3
         },
     ]
@@ -34,11 +34,11 @@ const Section6 = () => {
             array.map((item,i)=>{
                 return <div className='relative rounded-lg' key={i}>
                     <Image src={item?.image} className='rounded-lg'/>
-                        <div className='bg-gray-300 absolute top-[15px] py-[8px] w-[140px] flex flex-row items-center left-[10px] px-[10px] rounded-full gap-[8px]'>
+                        <div className='bg-[#E52B50] absolute top-[15px] py-[8px] w-[140px] flex flex-row items-center left-[10px] px-[10px] rounded-full gap-[8px]'>
                             <div className='h-[10px] w-[10px] rounded-full bg-white '></div>
-                            <p className='text-white'>{item?.date}</p>
+                            <p className='text-white text-[12px]'>{item?.date}</p>
                         </div>
-                        <div className='bg-gray-300 absolute bottom-[20px] left-[10px] px-[10px] py-[15px] right-[10px] rounded-lg'>
+                        <div className=' absolute bottom-[20px] left-[10px] px-[10px] py-[15px] right-[10px] rounded-lg bg-[#FBCEB1]'>
                             <h1 className='text-white text-[20px]'>{item?.heading}</h1>
                             <p className='text-white text-[14px]'>Lorenm ipsum dolor sit amet consectetur. Vitae <span className='underline'>Read more</span></p>
                         </div>

@@ -21,15 +21,10 @@ const About = () => {
           <div class="content">
             <h3>we take care of your healthy life</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
-              ducimus, quod ex cupiditate ullam in assumenda maiores et culpa
-              odit tempora ipsam qui, quisquam quis facere iste fuga, minus
-              nesciunt.
+            Our mission is to be your trusted partner in maintaining a healthy and vibrant life. With a team of dedicated healthcare professionals and state-of-the-art facilities, we are committed to providing you with the highest quality care.
             </p>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-              vero ipsam laborum porro voluptates voluptatibus a nihil
-              temporibus deserunt vel?
+            Our approach goes beyond just treating illnesses; we focus on holistic healthcare, emphasizing prevention, early intervention, and ongoing support. We believe in empowering you with the knowledge and resources needed to make informed decisions about your health.
             </p>
             <a  class="btn">
               learn more

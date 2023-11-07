@@ -23,12 +23,11 @@ const Services = () => {
             <TbCheckupList className="icon" />
             <h3>free checkups</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
-              omnis.
+            Your health matters, and so does your wallet. Get your checkup for free.
             </p>
             <a  class="btn">
-              {" "}
-              learn more{" "}
+              
+              learn more
             </a>
           </div>
 
@@ -37,12 +36,10 @@ const Services = () => {
             <FaAmbulance className="icon" />
             <h3>24/7 ambulance</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
-              omnis.
+            Emergency care at your doorstep, any time, day or night
             </p>
             <a class="btn">
-              {" "}
-              learn more{" "}
+              learn more
             </a>
           </div>
 
@@ -51,12 +48,10 @@ const Services = () => {
             <FaDochub className="icon" />
             <h3>expert doctors</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
-              omnis.
+            Skilled professionals dedicated to your well-being
             </p>
             <a  class="btn">
-              {" "}
-              learn more{" "}
+              learn more
             </a>
           </div>
 
@@ -65,8 +60,7 @@ const Services = () => {
             <GiMedicines className="icon" />
             <h3>medicines</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
-              omnis.
+            Access to the medications you need, when you need them.
             </p>
             <a  class="btn">
               {" "}
@@ -79,11 +73,9 @@ const Services = () => {
             <BiBed className="icon" />
             <h3>bed facility</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
-              omnis.
+            Comfortable and safe facilities for your recovery.
             </p>
             <a  class="btn">
-              {" "}
               learn more
             </a>
           </div>
@@ -93,11 +85,9 @@ const Services = () => {
             <FaHeartBroken className="icon" />
             <h3>total care</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
-              omnis.
+            Comprehensive healthcare solutions, because you deserve the best.
             </p>
             <a  class="btn">
-              {" "}
               learn more
             </a>
           </div>

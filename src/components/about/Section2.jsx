@@ -14,27 +14,27 @@ const Section2 = () => {
   let array = [
     {
       mainImage: blog1,
-      heading: "A Leading Global Agency In 15 Years.",
+      heading: "Medical Expertise.",
       userImage: user1,
       name: "Jhon catla",
       date: "15-12-2023",
-      para: "Lorem ipsum dolor sit amet consectetur Eius iusto debitis doloremque nulla reiciendis illum.",
+      para: "Our medical professionals bring years of experience and expertise to provide the best care.",
     },
     {
       mainImage: blog2,
-      heading: "A Leading Global Agency In 15 Years..",
+      heading: "Health Advocacy",
       userImage: user2,
       name: "Credon catla",
       date: "15-12-2023",
-      para: "Lorem ipsum dolor sit amet consectetur Eius iusto debitis doloremque nulla reiciendis illum.",
+      para: "Advocating for better health practices and promoting awareness in our communities.",
     },
     {
       mainImage: blog3,
-      heading: "Startup Leading Global Agency In 5 Years..",
+      heading: "Community Outreach.",
       userImage: user3,
       name: "Jhon catla",
       date: "15-9-2023",
-      para: "Lorem ipsum dolor sit amet consectetur Eius iusto debitis doloremque nulla reiciendis illum.",
+      para: "Our outreach coordinators work tirelessly to bridge gaps and make a positive impact.",
     },
   ];
   return (
@@ -44,8 +44,7 @@ const Section2 = () => {
           <span>Save</span> Life
         </h1>
         <p className="text-gray-500 text-center text-[20px] my-[20px]">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
+        We're on a mission to make a difference. Together, we can save lives and create a healthier world
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[40px] mt-[80px]">
           {array.map((item, i) => {

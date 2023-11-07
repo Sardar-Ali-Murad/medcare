@@ -11,7 +11,7 @@ const Footer = () => {
       <section class="footer">
         <div class="box-container">
           <div class="box">
-            <h3>quick links</h3>
+            <h3 className="text-[20px]">quick links</h3>
             <a className="cursor-pointer">
               <i class="fas fa-chevron-right"></i> home{" "}
             </a>
@@ -40,7 +40,7 @@ const Footer = () => {
           <div class="box">
             <h3>our services</h3>
             <a className="cursor-pointer">
-              <i class="fas fa-chevron-right"></i> dental care{" "}
+              <i class="fas fa-chevron-right"></i> dental care
             </a>
             <a className="cursor-pointer">
               <i class="fas fa-chevron-right"></i> message therapy{" "}

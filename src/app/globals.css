@@ -8,6 +8,9 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -53,6 +56,25 @@
   width: calc(var(--col-name-size) * 1px);
   font-size: 13px !important;
 }
-body {
 
+
+.css-1357ta5-MuiTableCell-root {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01071em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500 !important;
+}
+
+.css-lapokc {
+  min-width: 4ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px !important;
+  font-size: 18px;
+  font-weight: 500 !important;
 }
