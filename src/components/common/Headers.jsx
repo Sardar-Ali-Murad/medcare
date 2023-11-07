@@ -104,7 +104,7 @@ const Navbar = () => {
             <li>
               <Link
                 className="fancy-link"
-                href="/sdmin"
+                href="/admin"
                 onClick={() => setHam(true)}
               >
                 Admin
