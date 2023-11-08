@@ -56,6 +56,7 @@ const Donars = ({ setUser }) => {
       setLoading(false);
       deleteCookie("user");
       toast.success("Logout Success!");
+      deleteCookie("token")
     } catch (error) {
       setLoading(false);
     }
