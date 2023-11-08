@@ -5,6 +5,7 @@ import { provinces, cities, bloodGroups } from "./data";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import {path}  from "@/utils/path"
 
 const Donar = () => {
   let [obj, setObj] = React.useState({
@@ -30,7 +31,7 @@ const Donar = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post("https://medicare-nodejs.vercel.app/api/v1/donar", obj);
+      await axios.post(`${path}/api/v1/donar`, obj);
       toast.success("We have received your information. We will confirm it first before addding it to the listing!", {
         autoClose: 10000,
       });

@@ -9,6 +9,7 @@ import "../home/index.css"
 import axios from "axios";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
+import {path}  from "@/utils/path"
 
 const Table = () => {
   let [loading,setLoading]=React.useState(false)
@@ -17,7 +18,7 @@ const Table = () => {
     const getDonars=async ()=>{
       setLoading(true)
       try {
-        let {data}=await axios.get("https://medicare-nodejs.vercel.app/api/v1/donar")
+        let {data}=await axios.get(`${path}/api/v1/donar`)
         setData(data?.donars.filter((all)=>all?.isVerified===true))
         setLoading(false)
       } catch (error) {

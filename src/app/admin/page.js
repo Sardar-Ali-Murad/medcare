@@ -9,6 +9,7 @@ import Form from "@/components/admin/Form";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import Donars from "@/components/admin/Donars";
+import { path } from "@/utils/path";
 const admin = () => {
   let [email, setEmail] = React.useState("");
   let [password, setPassword] = React.useState("");
@@ -19,7 +20,7 @@ const admin = () => {
     setLoading(true);
     try {
       await axios.post(
-        "https://medicare-nodejs.vercel.app/api/v1/auth/login",
+        `${path}/api/v1/auth/login`,
         { email, password },
         {
           withCredentials: true,
@@ -44,7 +45,7 @@ const admin = () => {
     const getAdmin = async () => {
       setLoading(true);
       try {
-        await axios.get("https://medicare-nodejs.vercel.app/api/v1/auth/getCurrentUser", {
+        await axios.get(`${path}/api/v1/auth/getCurrentUser`, {
           withCredentials: true,
         });
         setCookie("user", "True");
@@ -61,7 +62,7 @@ const admin = () => {
   return (
     <div>
       <ToastContainer />
-      {loading && <Skeleton count={5}  />}
+      {loading && <Skeleton count={5} />}
       {!user ? (
         <Form
           email={email}
@@ -71,7 +72,7 @@ const admin = () => {
           handleSubmit={handleSubmit}
         />
       ) : (
-        <Donars/>
+        <Donars setUser={setUser} />
       )}
     </div>
   );

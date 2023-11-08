@@ -6,7 +6,9 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ResponsivePagination from "react-responsive-pagination";
 import "react-responsive-pagination/themes/classic.css";
-const Donars = () => {
+import { deleteCookie } from "cookies-next";
+import { path } from "@/utils/path";
+const Donars = ({ setUser }) => {
   let [loading, setLoading] = React.useState(false);
   let [data, setData] = React.useState([]);
   let [updater, setUpdater] = React.useState(false);
@@ -15,7 +17,7 @@ const Donars = () => {
     const getDonars = async () => {
       setLoading(true);
       try {
-        let { data } = await axios.get("https://medicare-nodejs.vercel.app/api/v1/donar");
+        let { data } = await axios.get(`${path}/api/v1/donar`);
         setData(data?.donars);
         setLoading(false);
       } catch (error) {
@@ -29,11 +31,11 @@ const Donars = () => {
     setLoading(true);
     try {
       await axios.patch(
-        `https://medicare-nodejs.vercel.app/api/v1/donar/${id}`,
+        `${path}/api/v1/donar/${id}`,
         { verification: verification },
         { withCredentials: true }
       );
-      toast.success("Donar Verified successfully");
+      toast.success("Donar verification updated successfully");
       setLoading(false);
       setUpdater((pre) => !pre);
     } catch (error) {
@@ -46,9 +48,25 @@ const Donars = () => {
     setCurrentPage(page);
   }
 
+  const handleLogout = async () => {
+    setLoading(true);
+    try {
+      await axios.get(`${path}/api/v1/auth/logout`, { withCredentials: true });
+      setUser(false);
+      setLoading(false);
+      deleteCookie("user");
+      toast.success("Logout Success!");
+    } catch (error) {
+      setLoading(false);
+    }
+  };
+
   return (
     <section className="min-h-[85vh]">
       <ToastContainer />
+
+      <input type="submit" value="Logout" class="btn" onClick={handleLogout} />
+
       {loading ? (
         <Skeleton count={5} />
       ) : data?.length === 0 ? (
@@ -69,20 +87,20 @@ const Donars = () => {
                     <p className="text-[12px] text-gray-700">{item?.city}</p>
                     <p className="text-[12px] text-gray-700">{item?.state}</p>
                     <p className="text-[12px] text-gray-700">{item?.email}</p>
-                      {item?.isVerified === false && (
-                        <input
-                          value="Approve"
-                          class="btn w-[120px] flex items-center ml-[50%] translate-x-[-50%] text-center"
-                          onClick={() => handleApprove(item?._id, true)}
-                        />
-                      )}
-                      {item?.isVerified === true && (
-                        <input
-                          value="Disapprove"
-                          class="btn w-[120px] flex items-center ml-[50%] translate-x-[-50%] text-center"
-                          onClick={() => handleApprove(item?._id, false)}
-                        />
-                      )}
+                    {item?.isVerified === false && (
+                      <input
+                        value="Approve"
+                        class="btn w-[120px] flex items-center ml-[50%] translate-x-[-50%] text-center"
+                        onClick={() => handleApprove(item?._id, true)}
+                      />
+                    )}
+                    {item?.isVerified === true && (
+                      <input
+                        value="Disapprove"
+                        class="btn w-[120px] flex items-center ml-[50%] translate-x-[-50%] text-center"
+                        onClick={() => handleApprove(item?._id, false)}
+                      />
+                    )}
                   </div>
                 </div>
               </div>

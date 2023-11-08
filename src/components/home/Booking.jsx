@@ -6,6 +6,7 @@ import Image from "next/image";
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {path}  from "@/utils/path"
 
 const Booking = () => {
   let [obj,setObj]=React.useState({
@@ -27,7 +28,7 @@ const Booking = () => {
   const handleSubmit=async (event)=>{
     event.preventDefault()
     try {
-      await axios.post("https://medicare-nodejs.vercel.app/api/v1/message",obj)
+      await axios.post(`${path}/api/v1/message`,obj)
       toast.success("Message Received Successsfully!", {
         position: toast.POSITION.TOP_CENTER
     });
